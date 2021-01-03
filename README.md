@@ -124,12 +124,12 @@ _As a **Bonus**, provide the specific commands the user will need to run to down
 Taking this virtual network into consideration, the commands theuser will need to run to download the playbook are following:
 1. ssh into jump-box provisioner 
 2. sudo docker container list -a 
-3. sudo docker start elastic_hodgkin *(the name of the docker)
-4. sudo docker attach elastic_hodgkin *(the name of the docker)
+3. sudo docker start elastic_hodgkin *(the name of the docker)*
+4. sudo docker attach elastic_hodgkin *(the name of the docker)*
 5. cd /etc/ansible 
-6. ansible webservers -m pinfg *to ensure connectivity 
+6. ansible webservers -m pinfg *to ensure connectivity*
 7. nano file-name.yml (create yaml script *make sure to follow the correct format for yaml otherwise it will not work*)
-8. ansible-playbook file-name.yml *once yaml script is created, save it and run it using the command 
+8. ansible-playbook file-name.yml *once yaml script is created, save it and run it using the command*
 
 
 ### References
