@@ -9,6 +9,7 @@ These files have been tested and used to generate a live ELK deployment on Azure
 Below are the required playbooks: 
 
   - [my-playbook.yml](Ansible/my-playbook.yml) To install DVWA servers
+  - [install-elk.yml](Ansible/intall-elk.yml) To intsall ELK server
   - [filebeat-playbook.yml](Ansible/filebeat-playbook.yml) To install/configure Filebeat on DVWA servers and ELK
   - [metricbeat-playbook.yml](Ansible/metricbeat-playbook.yml) To install/configure Metricbeat on DVWA servers and ELK
 
@@ -102,7 +103,7 @@ SSH into the control node and follow the steps below:
 - Run the playbook, and navigate to ELK-Server-publicIP:5601/app/kibana to check that the installation worked as expected.
 
 Which file is the playbook?  
-- (elk playbook.yml) 
+- [install-elk.yml](Ansible/intall-elk.yml) 
 - [filebeat-playbook.yml](Ansible/filebeat-playbook.yml)
 - [metricbeat-playbook.yml](Ansible/metricbeat-playbook.yml)
 
