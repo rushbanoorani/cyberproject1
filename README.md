@@ -118,7 +118,7 @@ How do I specify which machine to install the ELK server on versus which to inst
 - /etc/ansible/hosts will indicate where each should be installed
 
 Which URL do you navigate to in order to check that the ELK server is running? 
--  http://publicip(elkserver):5601
+-  http://[ELK-VM-PublicIP]:5601/app/kibana
 
 _As a **Bonus**, provide the specific commands the user will need to run to download the playbook, update the files, etc._
 
