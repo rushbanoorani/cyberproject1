@@ -6,6 +6,7 @@ The files in this repository were used to configure the network depicted below.
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the playbook (.yml)file may be used to install only certain pieces of it, such as Filebeat.
 
+Below are the required playbooks 
 
   - [my-playbook.yml](Ansible/my-playbook.yml) To install DVWA servers
   - [filebeat-playbook.yml](Ansible/filebeat-playbook.yml) To install/configure Filebeat on DVWA servers and ELK
@@ -59,7 +60,7 @@ A summary of the access policies in place can be found in the table below.
 
 | Name     | Publicly Accessible | Allowed IP Addresses |
 |----------|---------------------|----------------------|
-| Jump Box | Yes/No              | Personal IP Address  |
+| Jump Box | Yes                 | Personal IP Address  |
 | Web-1    | No                  |  10.0.0.5            |
 | Web-3    | No                  |  10.0.1.4            |
 | ELK-VM   | No                  |  10.2.0.4            |
