@@ -6,7 +6,7 @@ The files in this repository were used to configure the network depicted below.
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the playbook (.yml)file may be used to install only certain pieces of it, such as Filebeat.
 
-Below are the required playbooks 
+Below are the required playbooks: 
 
   - [my-playbook.yml](Ansible/my-playbook.yml) To install DVWA servers
   - [filebeat-playbook.yml](Ansible/filebeat-playbook.yml) To install/configure Filebeat on DVWA servers and ELK
@@ -55,7 +55,6 @@ Machines within the network can only be accessed by SSH.
 - The Elk-vm can be access by SSH from the Jump-Box-vm and through Personal IP Address
 
 
-
 A summary of the access policies in place can be found in the table below.
 
 | Name     | Publicly Accessible | Allowed IP Addresses |
@@ -67,14 +66,14 @@ A summary of the access policies in place can be found in the table below.
 	
 ### Elk Configuration
 
-Ansible was used to automate configuration of the ELK machine. No configuration was performed manually, which is advantageous because...
-- we can deploy multiple servers faster and easily without any hassle.
+Ansible was used to automate configuration of the ELK machine. No configuration was performed manually, which is advantageous because it can help organize and deploy multiple servers faster and easily without any hassle.
 
 The playbook implements the following tasks:
 - Install Docker.io (and pip3)
-- Increase memory for VM
+- Increase memory for virtual machines
 - Sysctl module
 - Download/config docker containers(ELK, in this case)
+- Set up Ports
 
 
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
