@@ -24,8 +24,10 @@ This document contains the following details:
 
 The main purpose of this network is to expose a load-balanced and monitored instance of DVWA, the D*mn Vulnerable Web Application.
 
-Load balancing ensures that the application will be highly available, in addition to restricting access to the network.
-- Load Balancer ensures availability to web-servers by distribution of incoming data to the servers. 
+Load balancing ensures that the application will be highly available, in addition to restricting access to the network. Furthermore, it effectively distributes incoming traffic across multiple servers thus, ensuring availability to web-servers.Load balancer adds additional layer(s) of security to a network/website. It can protect from emerging threats, DDoS attacks and protection against unauthorized access. 
+
+What is the advantage of a jump box?
+The main advantage for a jump box is that it can be considered as an originating or starting point for any administrative related tasks. In this particular scenario, jump box is considered as a admin work station which allows full connectivity to other VM's on the network. It is absolute necessary to first get access to jump box in order to gain access to other VM's
 
 Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the logs and system traffic.
 - Filebeats monitors log directories and log files
@@ -113,3 +115,5 @@ How do I specify which machine to install the ELK server on versus which to inst
 
 _As a **Bonus**, provide the specific commands the user will need to run to download the playbook, update the files, etc._
 
+### References
+What Is Load Balancing? How Load Balancers Work. (2020, May 29). Retrieved January 03, 2021, from https://www.nginx.com/resources/glossary/load-balancing/
